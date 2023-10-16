@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVE RYLEIGH</title>
+    <script>function updateClock() { const e = new Date("2023-09-05T00:00:00") - new Date, o = -Math.floor(e / 864e5), t = -Math.floor(e % 864e5 / 36e5), n = -Math.floor(e % 36e5 / 6e4), a = -Math.floor(e % 6e4 / 1e3); document.getElementById("clock").innerHTML = `${o} days, ${t} hours, ${n} minutes, ${a} seconds` } setInterval(updateClock, 1e3), updateClock();</script>
+</head>
+
+<body>
+    <style>
+        #infinite-scroll-container {
+            width: 100%;
+            font-size: 100%;
+            text-align: center;
+            font-size: 2em;
+            animation: 2s linear infinite colorChange
+        }
+
+        body {
+            background-color: pink
+        }
+
+        #luv {
+            font-size: 200%;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        #helloKitty {
+            width: 100%
+        }
+
+        #clock {
+            font-size: 200%;
+            animation: 2s linear infinite colorChange
+        }
+
+        @keyframes colorChange {
+
+            0%,
+            100% {
+                color: red
+            }
+
+            50% {
+                color: pink
+            }
+        }
+    </style>
+    <div id="clock"></div>
+    <h1 id="luv">I LOVE RYLEIGH</h1>
+    <img id="helloKitty" src="https://wallpapers.com/images/hd/cartoon-hello-kitty-pfp-ice-cream-4bqbex42esgsc6jc.jpg">
+    <div id="infinite-scroll-container"></div>
+    <script src="infinite.js"></script>
+</body>
+
+</html>
